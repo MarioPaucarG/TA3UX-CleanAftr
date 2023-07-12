@@ -43,7 +43,7 @@
           <div class="offcanvas-body">
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link text-light active" aria-current="page">
+                <a href="/index.html" class="nav-link text-light active" aria-current="page">
                   <i class="bi pe-none me-2 bi-house-door-fill "></i>
                   Inicio
                 </a>
@@ -93,13 +93,13 @@
             <hr />
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="/index.html" class="nav-link active" aria-current="page">
+                <a href="/index.html" class="nav-link text-black" >
                   <i class="bi pe-none me-2 bi-house-door-fill"></i>
                   Inicio
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-black">
+                <a href="#" class="nav-link active" aria-current="page">
                   <i class="bi pe-none me-2 bi-grid-fill"></i>
                   Categorias
                 </a>
@@ -123,7 +123,7 @@
         <div class="col-lg-10 col-xl-10 px-4">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
               <li class="breadcrumb-item active" aria-current="page">Control de asistencia</li>
             </ol>
           </nav>
@@ -134,45 +134,35 @@
             <label for="exampleDataList" class="form-label">Busqueda por curso</label>
             <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
             <datalist id="datalistOptions">
-              <option value="San Francisco">
-              <option value="New York">
-              <option value="Seattle">
-              <option value="Los Angeles">
-              <option value="Chicago">
+              <option value="Diseño UX">
+              <option value="Redes y Comunicaciones I">
+              <option value="Calculo I">
+              <option value="Calculo II">
+              <option value="Calculo III">
             </datalist>
             <br/>
             <br/>
             <div class="row row-cols-1 g-4 px-2 py-1">
-              <div class="row row-cols-2 pt-5">
-                <div class="col pe-3">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 pt-5">
+                <div class="col p-4">
                   <h4>Diseño UX</h4>
-                  <div class="progress1 d-none"></div>
-                  <div class="progress2 d-none"></div>
-                  <div class="progress3"></div>
+                  <div class="progress1"></div>
                 </div>
-                <div class="col ps-2 pe-4">
-                  <h4>Diseño UX</h4>
+                <div class="col p-4">
+                  <h4>Calculo I</h4>
+                  <div class="progress2"></div>
+                </div>           
+                <div class="col p-4">
+                  <h4>Calculo II</h4>
+                  <div class="progress3"></div>
+                </div>           
+                <div class="col p-4">
+                  <h4>Redes y comunicaciones I</h4>
                   <div class="progress4"></div>
                 </div>           
               </div>                 
             </div>
-            <div class="row row-cols-1 g-4 px-2 py-1">
-              <div class="col ps-1 pe-3">
-               <h4>Redes y comunicaciones I</h4>
-              </div>                     
-            </div>
-            <div class="row row-cols-1 g-4 px-2 py-1">
-              <div class="col ps-1 pe-3">
-                <div class="progress" role="progressbar" aria-label="Warning" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar progress-bar-striped  bg-danger text-white overflow-visible progress-bar-animated" style="width: 56%">Cantidad de asistencias 56%</div>
-                </div>
-              </div>                     
-              <div class="col ps-1 pe-3">
-                <div class="progress" role="progressbar" aria-label="Warning" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar progress-bar-striped  bg-warning text-dark overflow-visible progress-bar-animated" style="width: 45%">Cantidad de asistencias 45%</div>
-                </div>
-              </div>                     
-            </div>
+            
         </div>
             </div>
             

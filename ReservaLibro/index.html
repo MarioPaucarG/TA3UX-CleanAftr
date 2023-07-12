@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Reservación de Libros</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/>
+</head>
+<body>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Reserva de libros</li>
+    </ol>
+  </nav>
+  <h1>Formulario Reservación de Libros</h1>
+  <form id="book-form">
+    <div>
+      <label for="title">Título del Libro:</label>
+      <input type="text" id="title" required>
+    </div>
+    <div>
+      <label for="author">Autor del libro:</label>
+      <input type="text" id="author" required>
+    </div>
+    <div>
+      <label for="reservation-date">Fecha de Reserva del libro:</label>
+      <input type="date" id="reservation-date" required>
+    </div>
+    <div>
+      <label for="delivery-date">Fecha de entrega del libro:</label>
+      <input type="date" id="delivery-date" required>
+    </div>
+    <div>
+      <input type="submit" value="Reservar">
+    </div>
+  </form>
+
+  <div id="display-data" style="display: none;">
+    <h2>Datos de Reservación:</h2>
+    <p><strong>Título del Libro:</strong> <span id="display-title"></span></p>
+    <p><strong>Autor del Libro:</strong> <span id="display-author"></span></p>
+    <p><strong>Fecha de Reservación:</strong> <span id="display-reservation-date"></span></p>
+    <p><strong>Fecha de Entrega:</strong> <span id="display-delivery-date"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
